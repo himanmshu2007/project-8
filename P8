@@ -1,0 +1,51 @@
+#1a.
+
+# gotta pipe a lot
+
+cat /class/datamine/data/8451/The_Complete_Journey_2_master/5000_transactions.csv | cut -d, -f 7 | sort | uniq -c | sort4
+
+#2221500 SOUTH
+
+#2463343 CENTRAL
+
+#2677350 WEST
+
+#3263360 EAST
+
+
+
+#1b.
+
+# i hate this template
+
+wget http://stat-computing.org/dataexpo/2009/airports.csv | cat airports.csv | cut -d, -f 3 | sort | uniq -c | sort
+
+#columbus has 9
+
+
+
+#2a.
+
+# still not enjoying this template
+
+cat /class/datamine/data/taxi/yellow/yellow_tripdata_2019-06.csv | cut -d, -f 8 | sort | uniq -c | sort -n
+
+# location 237 had 295057 pickups
+
+
+
+#2b.
+
+# guess who still dosn't like this template
+
+cat /class/datamine/data/election/itcont2020.txt | cut -d\| -f 9-10 | sort | uniq -c | sort -n
+
+#New York, New York has the most donations at 77999
+
+
+
+#3a.
+
+# 7:52, thats how long of my life i wasted running this code.
+
+
